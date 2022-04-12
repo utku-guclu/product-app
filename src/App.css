@@ -2,37 +2,108 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  margin: 30px 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer-container {
+  height: 30px;
+  position: relative;
+  bottom: 0;
 }
+
+footer {
+  text-align: center;
+  padding: 3px;
+  width: 100%;
+  border-top: 2px solid black;
+  padding-top: 20px;
+  position: absolute;
+  margin-top: 300px;
+}
+
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 0 100px;
+}
+
+.buttons button {
+  height: 30px;
+  margin-right: 60px;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+}
+
+#add-product-btn:active,
+#save-product-btn:active {
+  background-color: #01ff80;
+  border-radius: 4px;
+}
+
+#delete-product-btn:active,
+#cancel-product-btn:active {
+  background-color: #f03d3d;
+  border-radius: 4px;
+}
+
+.product-box {
+  width: 200px;
+  height: 150px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  margin-bottom: 60px;
+  display: inline-table;
+}
+
+.product-info {
+  font-size: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.product-info ul {
+  display: contents;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-info ul li {
+  display: flex;
+  list-style: none;
+}
+
+.delete-checkbox {
+  margin: 10px;
+  text-align: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+/**  Product Form **/
+label {
+  display: inline-block;
+  width: 150px;
+}
+
+#product-form {
+  float: left;
+  display: grid;
+  text-align: left;
+}
+
+.form-input {
+  margin-bottom: 30px;
 }
