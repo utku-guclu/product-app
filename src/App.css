@@ -62,6 +62,7 @@ footer {
   border-radius: 4px;
   margin-bottom: 60px;
   display: inline-table;
+  margin: 30px;
 }
 
 .product-info {
@@ -106,4 +107,43 @@ label {
 
 .form-input {
   margin-bottom: 30px;
+}
+
+
+@media only screen and (max-width: 964px) {
+  .buttons {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .App-header h1 {
+    margin-right: 60px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+
+
+  .App-header {
+    padding: 0 30px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    margin: 9px;
+  }
 }
