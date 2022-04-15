@@ -63,15 +63,19 @@ footer {
   margin-bottom: 60px;
   display: inline-table;
   margin: 30px;
+  font-family: initial;
+  background: #282c34;
+  color: #fff;
 }
 
 .product-info {
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   margin: 0 auto;
+  line-height: 24px;
 }
 
 .product-info ul {
